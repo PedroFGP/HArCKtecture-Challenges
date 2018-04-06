@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LoopChallenge", "LoopChallenge\LoopChallenge.vcxproj", "{C95A5F12-0D12-42B0-A2FB-3D65B65AA012}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C95A5F12-0D12-42B0-A2FB-3D65B65AA012}.Debug|x64.ActiveCfg = Debug|x64
+		{C95A5F12-0D12-42B0-A2FB-3D65B65AA012}.Debug|x64.Build.0 = Debug|x64
+		{C95A5F12-0D12-42B0-A2FB-3D65B65AA012}.Debug|x86.ActiveCfg = Debug|Win32
+		{C95A5F12-0D12-42B0-A2FB-3D65B65AA012}.Debug|x86.Build.0 = Debug|Win32
+		{C95A5F12-0D12-42B0-A2FB-3D65B65AA012}.Release|x64.ActiveCfg = Release|x64
+		{C95A5F12-0D12-42B0-A2FB-3D65B65AA012}.Release|x64.Build.0 = Release|x64
+		{C95A5F12-0D12-42B0-A2FB-3D65B65AA012}.Release|x86.ActiveCfg = Release|Win32
+		{C95A5F12-0D12-42B0-A2FB-3D65B65AA012}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {07A64CAA-1EE7-4752-8CC4-3E9D47C8DA3B}
+	EndGlobalSection
+EndGlobal
