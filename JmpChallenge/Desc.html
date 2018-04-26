@@ -1,0 +1,68 @@
+A instrução <b>jmp</b> desvia a execução sem guardar informação sobre o retorno.<br>
+<br>
+<b>Observação:</b><br>
+<br>
+<a href="https://c9x.me/x86/html/file_module_x86_id_147.html">Explicação Completa</a>
+<br>
+É utilizável da seguinte forma:<br>
+<br>
+<b>Legenda:</b> 
+
+<ul>
+  <li>rel* - Relativo de * bits</li>
+  <li>r - Registrador</li>
+  <li>m* - Memória de * bits</li>
+</ul>
+
+<table>
+<tbody><tr>
+<th>Opcode (Bytes)</th>
+<th>Mnemônico</th>
+<th>Descrição</th>
+</tr>
+<tr>
+<td>EB cb</td>
+<td>JMP rel8</td>
+<td>Jump short, relative, displacement relative to next instruction.</td>
+</tr>
+<tr>
+<td>E9 cw</td>
+<td>JMP rel16</td>
+<td>Jump near, relative, displacement relative to next instruction.</td>
+</tr>
+<tr>
+<td>E9 cd</td>
+<td>JMP rel32</td>
+<td>Jump near, relative, displacement relative to next instruction.</td>
+</tr>
+<tr>
+<td>FF /4</td>
+<td>JMP r/m16</td>
+<td>Jump near, absolute indirect, address given in r/m16.</td>
+</tr>
+<tr>
+<td>FF /4</td>
+<td>JMP r/m32</td>
+<td>Jump near, absolute indirect, address given in r/m32.</td>
+</tr>
+<tr>
+<td>EA cd</td>
+<td>JMP ptr16:16</td>
+<td>Jump far, absolute, address given in operand.</td>
+</tr>
+<tr>
+<td>EA cp</td>
+<td>JMP ptr16:32</td>
+<td>Jump far, absolute, address given in operand.</td>
+</tr>
+<tr>
+<td>FF /5</td>
+<td>JMP m16:16</td>
+<td>Jump far, absolute indirect, address given in m16:16.</td>
+</tr>
+<tr>
+<td>FF /5</td>
+<td>JMP m16:32</td>
+<td>Jump far, absolute indirect, address given in m16:32.</td>
+</tr>
+</tbody></table>
