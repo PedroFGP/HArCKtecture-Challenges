@@ -1,0 +1,21 @@
+A instrução <b>div</b> divide o valor (positivo) do registrador eax (ax, dx:ax) pelo operador (origem) e armazena o resultado no registrador eax (al, ax) e o resto no registrador edx (ah, dx).<br>
+<br>
+<b>Observação:</b> só é válido para inteiros positivos.<br>
+<br>
+<a href="https://c9x.me/x86/html/file_module_x86_id_72.html">Explicação Completa</a>
+<br>
+É utilizável ainda da seguinte forma:<br>
+<br>
+<b>Legenda:</b> 
+
+<ul>
+  <li>r - Registrador</li>
+  <li>m* - Memória de * bits</li>
+</ul>
+
+<table>
+<tbody><tr><th>Tamanho do Operador</th><th>Dividendo</th><th>Divisor</th><th>Quociente</th><th>Resto</th><th>Quociente Máximo</th></tr>
+<tr><td>Word/byte</td><td>AX</td><td>r/m8</td><td>AL</td><td>AH</td><td>2^8 - 1</td></tr>
+<tr><td>Doubleword/word</td><td>DX:AX</td><td>r/m16</td><td>AX</td><td>DX</td><td>2^16 - 1</td></tr>
+<tr><td>Quadword/doubleword</td><td>EDX:EAX</td><td>r/m32</td><td>EAX</td><td>EDX</td><td>2^32 - 1</td></tr>
+</tbody></table>
