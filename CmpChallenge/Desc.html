@@ -1,0 +1,93 @@
+A instrução <b>cmp</b> compara o primeiro operador com o segundo operador e atribui as flags 'EFLAGS' de acordo com o resultado.<br>
+<br>
+<b>Observação:</b>
+<br>
+<a href="https://c9x.me/x86/html/file_module_x86_id_35.html">Explicação Completa</a>
+<br>
+É utilizável da seguinte forma:<br>
+<br>
+<b>Legenda:</b> 
+
+<ul>
+  <li>imm* - Imediato de * bits</li>
+  <li>r - Registrador</li>
+  <li>m* - Memória de * bits</li>
+</ul>
+
+<table>
+<tbody><tr>
+<th>Opcode (Bytes)</th>
+<th>Mnemônico</th>
+<th>Descrição</th>
+</tr>
+<tr>
+<td>3C ib</td>
+<td>CMP AL, imm8</td>
+<td>Compare imm8 with AL.</td>
+</tr>
+<tr>
+<td>3D iw</td>
+<td>CMP AX, imm16</td>
+<td>Compare imm16 with AX.</td>
+</tr>
+<tr>
+<td>3D id</td>
+<td>CMP EAX, imm32</td>
+<td>Compare imm32 with EAX.</td>
+</tr>
+<tr>
+<td>80 /7 ib</td>
+<td>CMP r/m8, imm8</td>
+<td>Compare imm8 with r/m8.</td>
+</tr>
+<tr>
+<td>81 /7 iw</td>
+<td>CMP r/m16, imm16</td>
+<td>Compare imm16 with r/m16.</td>
+</tr>
+<tr>
+<td>81 /7 id</td>
+<td>CMP r/m32,imm32</td>
+<td>Compare imm32 with r/m32.</td>
+</tr>
+<tr>
+<td>83 /7 ib</td>
+<td>CMP r/m16,imm8</td>
+<td>Compare imm8 with r/m16.</td>
+</tr>
+<tr>
+<td>83 /7 ib</td>
+<td>CMP r/m32,imm8</td>
+<td>Compare imm8 with r/m32.</td>
+</tr>
+<tr>
+<td>38 /r</td>
+<td>CMP r/m8,r8</td>
+<td>Compare r8 with r/m8.</td>
+</tr>
+<tr>
+<td>39 /r</td>
+<td>CMP r/m16,r16</td>
+<td>Compare r16 with r/m16.</td>
+</tr>
+<tr>
+<td>39 /r</td>
+<td>CMP r/m32,r32</td>
+<td>Compare r32 with r/m32.</td>
+</tr>
+<tr>
+<td>3A /r</td>
+<td>CMP r8,r/m8</td>
+<td>Compare r/m8 with r8.</td>
+</tr>
+<tr>
+<td>3B /r</td>
+<td>CMP r16,r/m16</td>
+<td>Compare r/m16 with r16.</td>
+</tr>
+<tr>
+<td>3B /r</td>
+<td>CMP r32,r/m32</td>
+<td>Compare r/m32 with r32.</td>
+</tr>
+</tbody></table>
