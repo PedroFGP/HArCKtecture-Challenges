@@ -1,0 +1,64 @@
+A instrução <b>call</b> salva informações de linking do stack e desvia a execução para a "função" chamada.<br>
+<br>
+<b>Observação:</b>
+<br>
+<a href="https://c9x.me/x86/html/file_module_x86_id_26.html">Explicação Completa</a>
+<br>
+É utilizável da seguinte forma:<br>
+<br>
+<b>Legenda:</b> 
+
+<ul>
+  <li>rel* - Relativo de * bits</li>
+  <li>r - Registrador</li>
+  <li>m* - Memória de * bits</li>
+  <li>ptr* - Ponteiro de * bits</li>
+</ul>
+
+<table>
+<tbody><tr>
+<th>Opcode (Bytes)</th>
+<th>Mnemônico</th>
+<th>Descrição</th>
+</tr>
+<tr>
+<td>E8 cw</td>
+<td>CALL rel16</td>
+<td>Call near, relative, displacement relative to next instruction</td>
+</tr>
+<tr>
+<td>E8 cd</td>
+<td>CALL rel32</td>
+<td>Call near, relative, displacement relative to next instruction</td>
+</tr>
+<tr>
+<td>FF /2</td>
+<td>CALL r/m16</td>
+<td>Call near, absolute indirect, address given in r/m16</td>
+</tr>
+<tr>
+<td>FF /2</td>
+<td>CALL r/m32</td>
+<td>Call near, absolute indirect, address given in r/m32</td>
+</tr>
+<tr>
+<td>9A cd</td>
+<td>CALL ptr16:16</td>
+<td>Call far, absolute, address given in operand</td>
+</tr>
+<tr>
+<td>9A cp</td>
+<td>CALL ptr16:32</td>
+<td>Call far, absolute, address given in operand</td>
+</tr>
+<tr>
+<td>FF /3</td>
+<td>CALL m16:16</td>
+<td>Call far, absolute indirect, address given in m16:16</td>
+</tr>
+<tr>
+<td>FF /3</td>
+<td>CALL m16:32</td>
+<td>Call far, absolute indirect, address given in m16:32</td>
+</tr>
+</tbody></table>
